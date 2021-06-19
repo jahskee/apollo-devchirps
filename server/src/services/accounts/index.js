@@ -16,5 +16,5 @@ import typeDefs from "./typeDefs";
   server.applyMiddleware({ app })
   
   await new Promise(resolve => app.listen({ port: ACCOUNTS_SERVER_PORT }, resolve));
-  console.log(`🚀 Service ready at ${ACCOUNTS_SERVER_URL}${server.graphqlPath}`);
+  console.log(`🚀 Server/Accounts ready at ${ACCOUNTS_SERVER_URL}${server.graphqlPath}`);
 })();

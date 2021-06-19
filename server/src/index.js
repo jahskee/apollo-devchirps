@@ -20,5 +20,5 @@ import { ApolloServer} from "apollo-server-express";
   server.applyMiddleware({ app })
 
   await new Promise(resolve => app.listen({ port }, resolve));
-  console.log(`🚀 Gateway Server ready at ${server_url}${server.graphqlPath}`);
+  console.log(`🚀 Server/Gateway ready at ${server_url}${server.graphqlPath}`);
 })();
