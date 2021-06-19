@@ -7,7 +7,7 @@ import { ApolloServer} from "apollo-server-express";
   const server_url = process.env.GATEWAY_SERVER_URL;
 
   const gateway = new ApolloGateway({
-    serviceList: [ { "name": "accounts", url: "http://localhost:4001"}],
+    serviceList: [ { name: "accounts", url: "http://localhost:4001/graphql"}],
   });
   
   const server = new ApolloServer({
