@@ -8,6 +8,7 @@ const typeDefs = gql`
 
   extend type Query {
     hello: String
+    viewer: Account
   }
 `;
 
