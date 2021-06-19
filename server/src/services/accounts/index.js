@@ -8,7 +8,6 @@ import typeDefs from "./typeDefs";
 (async function startApolloServer() {
   const { ACCOUNTS_SERVER_PORT, ACCOUNTS_SERVER_URL} = process.env;
 
-
   const server = new ApolloServer({
     schema: buildFederatedSchema({ typeDefs, resolvers }),
   });
